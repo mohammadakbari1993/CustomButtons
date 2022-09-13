@@ -1,0 +1,22 @@
+{
+  "name": "CustomButtons",
+  "version": "0.1.0",
+  "summary": "A short description of CustomButtons.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mohammadakbari1993/CustomButtons",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mohammadakbari1993": "m.akbarii1993@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mohammadakbari1993/CustomButtons.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "CustomButtons/Classes/**/*"
+}

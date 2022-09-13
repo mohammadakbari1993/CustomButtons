@@ -1,0 +1,6 @@
+framework module Pods_CustomButtons_Example {
+  umbrella header "Pods-CustomButtons_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
