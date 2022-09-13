@@ -8,13 +8,13 @@
 
 import UIKit
 
-enum ButtonTypes {
+public enum ButtonTypes {
     case normal(title : String , tintColor : UIColor? , textAlignment : NSTextAlignment?)
     case withSubTitle(title : String , subtitle : String , tintColor : UIColor? , textsAlignment : NSTextAlignment?)
     case withIconAndSubtitle(iconName : String, title : String, subtitle : String , tintColor : UIColor? , textsAlignment : NSTextAlignment?)
 }
 
-class CustomButton: UIButton {
+public class CustomButton: UIButton {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -50,7 +50,7 @@ class CustomButton: UIButton {
     
     private var buttonAction: (()->Void)?
     
-    init(with Type : ButtonTypes , action : (()->Void)?) {
+    public init(with Type : ButtonTypes , action : (()->Void)?) {
         super.init(frame: .zero)
         
         self.buttonAction = action
@@ -149,7 +149,7 @@ class CustomButton: UIButton {
         }
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         switch self.typeOfButton {
