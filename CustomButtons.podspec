@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CustomButtons'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CustomButtons.'
+  s.summary          = 'CustomButtons is a library that used to create symple and customized button with Icon and Subtitle just by one initilizer.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,9 +26,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mohammadakbari1993' => 'm.akbarii1993@gmail.com' }
   s.source           = { :git => 'https://github.com/mohammadakbari1993/CustomButtons.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.linkedin.com/in/mohammadakbari-ios/'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.1'
 
   s.source_files = 'CustomButtons/Classes/**/*'
   
