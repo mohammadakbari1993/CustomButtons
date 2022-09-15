@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		01D1659D28D0C395003EDD07 /* Pods_CustomButtons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D1659C28D0C395003EDD07 /* Pods_CustomButtons_Example.framework */; };
 		01D1659E28D0C395003EDD07 /* Pods_CustomButtons_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01D1659C28D0C395003EDD07 /* Pods_CustomButtons_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01FC8E8F28D3119200DAC8D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8E8E28D3119100DAC8D6 /* User.swift */; };
+		01FC8E9128D311A800DAC8D6 /* SavedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8E9028D311A800DAC8D6 /* SavedUsers.swift */; };
+		01FC8E9428D312A300DAC8D6 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8E9328D312A300DAC8D6 /* UserDefaultManager.swift */; };
+		01FC8E9B28D3469A00DAC8D6 /* RegisterValidationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8E9A28D3469A00DAC8D6 /* RegisterValidationErrors.swift */; };
+		01FC8E9E28D3482E00DAC8D6 /* RegisterValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8E9D28D3482E00DAC8D6 /* RegisterValidator.swift */; };
+		01FC8EA428D34E4000DAC8D6 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EA328D34E4000DAC8D6 /* AlertManager.swift */; };
+		01FC8EA828D3506400DAC8D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EA728D3506400DAC8D6 /* LoginViewController.swift */; };
+		01FC8EAD28D355D500DAC8D6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EAC28D355D500DAC8D6 /* UIViewController+Extensions.swift */; };
+		01FC8EAF28D3571800DAC8D6 /* AboutStoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EAE28D3571800DAC8D6 /* AboutStoryBoards.swift */; };
+		01FC8EB128D35AEF00DAC8D6 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EB028D35AEF00DAC8D6 /* LoginModel.swift */; };
+		01FC8EB428D35B9A00DAC8D6 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EB228D35B9A00DAC8D6 /* LoginManager.swift */; };
+		01FC8EB628D35C2300DAC8D6 /* LoginValidationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EB528D35C2300DAC8D6 /* LoginValidationErrors.swift */; };
+		01FC8EB828D35C9C00DAC8D6 /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8EB728D35C9C00DAC8D6 /* LoginValidator.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -45,6 +58,19 @@
 /* Begin PBXFileReference section */
 		01D1659828D0C336003EDD07 /* CustomButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CustomButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D1659C28D0C395003EDD07 /* Pods_CustomButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CustomButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01FC8E8E28D3119100DAC8D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		01FC8E9028D311A800DAC8D6 /* SavedUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUsers.swift; sourceTree = "<group>"; };
+		01FC8E9328D312A300DAC8D6 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		01FC8E9A28D3469A00DAC8D6 /* RegisterValidationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterValidationErrors.swift; sourceTree = "<group>"; };
+		01FC8E9D28D3482E00DAC8D6 /* RegisterValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterValidator.swift; sourceTree = "<group>"; };
+		01FC8EA328D34E4000DAC8D6 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		01FC8EA728D3506400DAC8D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		01FC8EAC28D355D500DAC8D6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		01FC8EAE28D3571800DAC8D6 /* AboutStoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutStoryBoards.swift; sourceTree = "<group>"; };
+		01FC8EB028D35AEF00DAC8D6 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		01FC8EB328D35B9A00DAC8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/LoginManager.swift; sourceTree = "<group>"; };
+		01FC8EB528D35C2300DAC8D6 /* LoginValidationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationErrors.swift; sourceTree = "<group>"; };
+		01FC8EB728D35C9C00DAC8D6 /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
 		1F89C447D72F5A339614BE06 /* Pods-CustomButtons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomButtons_Tests.release.xcconfig"; path = "Target Support Files/Pods-CustomButtons_Tests/Pods-CustomButtons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3574D7605504A6C818BBDC8F /* Pods_CustomButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A61519F3840B28AAA1112C /* CustomButtons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomButtons.podspec; path = ../CustomButtons.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -86,6 +112,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01FC8E8D28D3116C00DAC8D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8E8E28D3119100DAC8D6 /* User.swift */,
+				01FC8E9028D311A800DAC8D6 /* SavedUsers.swift */,
+				01FC8EB028D35AEF00DAC8D6 /* LoginModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		01FC8E9228D3128E00DAC8D6 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8EA228D34E2800DAC8D6 /* Alert */,
+				01FC8E9C28D3481900DAC8D6 /* Validators */,
+				01FC8E9928D3467800DAC8D6 /* Enums */,
+				01FC8E9328D312A300DAC8D6 /* UserDefaultManager.swift */,
+				01FC8EB228D35B9A00DAC8D6 /* LoginManager.swift */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		01FC8E9928D3467800DAC8D6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8E9A28D3469A00DAC8D6 /* RegisterValidationErrors.swift */,
+				01FC8EAE28D3571800DAC8D6 /* AboutStoryBoards.swift */,
+				01FC8EB528D35C2300DAC8D6 /* LoginValidationErrors.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		01FC8E9C28D3481900DAC8D6 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8E9D28D3482E00DAC8D6 /* RegisterValidator.swift */,
+				01FC8EB728D35C9C00DAC8D6 /* LoginValidator.swift */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
+		01FC8EA228D34E2800DAC8D6 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8EA328D34E4000DAC8D6 /* AlertManager.swift */,
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
+		01FC8EA528D3503400DAC8D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8EA628D3504000DAC8D6 /* UIViewController */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		01FC8EA628D3504000DAC8D6 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				01FC8EA728D3506400DAC8D6 /* LoginViewController.swift */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
+		01FC8EAB28D355C000DAC8D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8EAC28D355D500DAC8D6 /* UIViewController+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		37F32010ADF4F9AC1FCCB922 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,8 +232,11 @@
 		607FACD21AFB9204008FA782 /* Example for CustomButtons */ = {
 			isa = PBXGroup;
 			children = (
+				01FC8EAB28D355C000DAC8D6 /* Extensions */,
+				01FC8EA528D3503400DAC8D6 /* Views */,
+				01FC8E9228D3128E00DAC8D6 /* Help */,
+				01FC8E8D28D3116C00DAC8D6 /* Model */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -350,8 +453,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FC8EA828D3506400DAC8D6 /* LoginViewController.swift in Sources */,
+				01FC8EB128D35AEF00DAC8D6 /* LoginModel.swift in Sources */,
+				01FC8EA428D34E4000DAC8D6 /* AlertManager.swift in Sources */,
+				01FC8EAF28D3571800DAC8D6 /* AboutStoryBoards.swift in Sources */,
+				01FC8EAD28D355D500DAC8D6 /* UIViewController+Extensions.swift in Sources */,
+				01FC8EB428D35B9A00DAC8D6 /* LoginManager.swift in Sources */,
+				01FC8E9128D311A800DAC8D6 /* SavedUsers.swift in Sources */,
+				01FC8E9E28D3482E00DAC8D6 /* RegisterValidator.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				01FC8EB828D35C9C00DAC8D6 /* LoginValidator.swift in Sources */,
+				01FC8EB628D35C2300DAC8D6 /* LoginValidationErrors.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				01FC8E8F28D3119200DAC8D6 /* User.swift in Sources */,
+				01FC8E9B28D3469A00DAC8D6 /* RegisterValidationErrors.swift in Sources */,
+				01FC8E9428D312A300DAC8D6 /* UserDefaultManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +490,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		01FC8EB228D35B9A00DAC8D6 /* LoginManager.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01FC8EB328D35B9A00DAC8D6 /* Base */,
+			);
+			name = LoginManager.swift;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,12 +629,14 @@
 			baseConfigurationReference = D33F86FDB76183065DC00B40 /* Pods-CustomButtons_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CustomButtons/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -521,6 +647,7 @@
 			baseConfigurationReference = 61BD1255A2EF5A9D04A7C0C3 /* Pods-CustomButtons_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CustomButtons/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
