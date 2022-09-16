@@ -8,11 +8,18 @@
 
 import Foundation
 
-struct User : Codable {
+struct User : Codable , Equatable {
     
     var name : String
     var userName : String
     var password : String
     
     static let sample = User(name: "", userName: "", password: "")
+}
+
+extension User {
+    func configureView(vc : MainViewController) {
+        vc.userNameLbl.text = "Your username is: " + self.userName
+        vc.nameLbl.text = "Your name is: " + self.name
+    }
 }

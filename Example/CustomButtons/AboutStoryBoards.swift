@@ -17,7 +17,23 @@ enum AppStoryBoards : String {
     case Main = "Main"
 }
 
-enum AppControllers : String {
-    case ViewController = "ViewController"
-    case LoginViewController = "LoginViewController"
+enum AppControllers {
+    
+    case ViewController
+    case LoginViewController
+    case MainViewController(user : User)
+    case MainNavigationController
+    var identifier : String {
+        switch self {
+        case .ViewController:
+            return "ViewController"
+        case .LoginViewController:
+            return "LoginViewController"
+        case .MainViewController:
+            return "MainViewController"
+        case .MainNavigationController :
+            return "MainNavigationController"
+        }
+    }
+    
 }

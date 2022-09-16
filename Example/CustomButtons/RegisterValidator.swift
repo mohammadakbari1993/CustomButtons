@@ -8,8 +8,11 @@
 
 import Foundation
 
-struct RegisterValidator {
+public struct RegisterValidator {
     
+    
+    /// Check your model's validations
+    /// - Parameter user: The user that you want to save it
     static func verify(user : User) throws{
         
         guard !user.name.isEmpty else {

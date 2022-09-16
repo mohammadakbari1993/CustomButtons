@@ -15,6 +15,12 @@ class UserDefaultManager {
     
     static let shared = UserDefaultManager()
     
+    
+    /// Helps you to save a user in UserDefaults
+    /// - Parameters:
+    ///   - user: The user you want to save it
+    ///   - success: Called when your operation has done successfully
+    ///   - unsuccess: Called when an error occurs
     func addUserToUserDefaults(user : User, success : @escaping() -> Void ,unsuccess : @escaping(_ ErrorMessage : String) -> Void) {
         
         do{
@@ -40,6 +46,8 @@ class UserDefaultManager {
         
     }
     
+    /// Return the list of your users
+    /// - Returns: Users List
     func readUsersList() -> SavedUsers {
         
         if let savedPerson = defaults.object(forKey: "SavedPerson") as? Data {
@@ -58,6 +66,18 @@ class UserDefaultManager {
     }
     
     
+    /// Save the time of your login time
+    /// - Parameter date: login time
+    func saveLoginSession(date : TimeInterval) {
+        defaults.set(date, forKey: "saveLoginSession")
+    }
     
+    /// Return your login time
+    /// - Returns: login time
+    func getLoginSessionTime() -> TimeInterval {
+        return defaults.double(forKey: "saveLoginSession")
+    }
+    
+
 }
 

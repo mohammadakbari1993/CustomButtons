@@ -61,6 +61,16 @@
                ReferencedContainer = "container:CustomButtons.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "01255B7C28D4737D00458E92"
+               BuildableName = "CustomButtons_ExampleTests.xctest"
+               BlueprintName = "CustomButtons_ExampleTests"
+               ReferencedContainer = "container:CustomButtons.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

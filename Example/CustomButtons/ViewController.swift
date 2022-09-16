@@ -12,6 +12,8 @@ import CustomButtons
 class ViewController: UIViewController {
 
    
+    
+    /// Name of user
     private var nameTxt : UITextField = {
         let textField = UITextField()
         textField.placeholder = "Please insert your name"
@@ -21,6 +23,7 @@ class ViewController: UIViewController {
         return textField
     }()
     
+    /// UserName of user
     private var userNameTxt : UITextField = {
         let textField = UITextField()
         textField.placeholder = "Please insert your user-name"
@@ -30,6 +33,8 @@ class ViewController: UIViewController {
         return textField
     }()
     
+    
+    /// Password for the account
     private var passwordTxt : UITextField = {
         let textField = UITextField()
         textField.placeholder = "Please insert your password"
@@ -40,15 +45,17 @@ class ViewController: UIViewController {
         return textField
     }()
     
-    private var sign_up_Button : CustomButton!
     
+    /// The Button for the register
+    private var sign_up_Button : CustomButton!
+   
+    /// The Button for the push controller to Login's View
     private var sign_in_Button : CustomButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         self.view.backgroundColor = UIColor.systemBackground
         createButtons()
         
@@ -58,6 +65,9 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
+    
+    /// Create CustomButtons and set their operations
+
     func createButtons() {
      
         // Create signIn button

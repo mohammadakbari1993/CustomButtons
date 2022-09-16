@@ -11,6 +11,8 @@ import CustomButtons
 
 class LoginViewController: UIViewController {
     
+    
+    /// UserName of user
      private var userNameTxt : UITextField = {
          let textField = UITextField()
          textField.placeholder = "Please insert your user-name"
@@ -19,7 +21,8 @@ class LoginViewController: UIViewController {
          textField.layer.cornerRadius = 8
          return textField
      }()
-     
+    
+    /// Your account's password
      private var passwordTxt : UITextField = {
          let textField = UITextField()
          textField.placeholder = "Please insert your password"
@@ -30,7 +33,8 @@ class LoginViewController: UIViewController {
          return textField
      }()
      
-
+    
+    /// The button for the calling your login's operations
      private var sign_in_Button : CustomButton!
      
      
@@ -44,26 +48,18 @@ class LoginViewController: UIViewController {
      
      func createButtons() {
       
-         // Create signIn button
-         self.sign_in_Button = CustomButton(with: .withSubTitle(title: "Login",
-                                                    subtitle: "You'r session will be 30 Seconds",
-                                                    tintColor: .white,
-                                                    textsAlignment: .center)) {
+         self.sign_in_Button = CustomButton(with: .normal(title: "Login", tintColor: UIColor.white, textAlignment: .center)) {
              self.login()
          }
          sign_in_Button.backgroundColor = UIColor.systemBlue
-
          self.setFramesAndSubviews()
-         
      }
 
      
      private func setFramesAndSubviews() {
          
          self.userNameTxt.frame = CGRect(x: 16, y: 106, width: self.view.frame.width - 36, height: 50)
-         
          self.passwordTxt.frame = CGRect(x: 16, y: 172, width: self.view.frame.width - 36, height: 50)
-         
          self.sign_in_Button.frame = CGRect(x: 32 , y: self.view.frame.height - 106, width: self.view.frame.width - 64, height: 50)
      
          self.view.addSubview(userNameTxt)
@@ -78,13 +74,12 @@ class LoginViewController: UIViewController {
                                 password: self.passwordTxt.text ?? "")
          
          LoginManager.Login(model: model) { user in
-             print(user)
+             UserDefaultManager.shared.saveLoginSession(date: Date().timeIntervalSince1970)
+             self.changeRootViewWithAnimation(storyBoardName: .Main, Identifier: .MainViewController(user: user))
          } unsuccess: { ErrorMessage in
              AlertManager.showSimpleAlert(title: "Error", message: ErrorMessage, buttonTitle: "Ok", on: self)
          }
 
-         
-         
      }
      
 }

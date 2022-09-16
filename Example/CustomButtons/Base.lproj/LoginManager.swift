@@ -10,6 +10,12 @@ import Foundation
 
 struct LoginManager {
     
+    
+    /// This method called for your login operation
+    /// - Parameters:
+    ///   - model: The login model, user inputs to login.
+    ///   - success: Called when your operation has done successfully
+    ///   - unsuccess: Called when an error occurs
     static func Login(model : LoginModel, success : @escaping(_ user : User) -> Void ,unsuccess : @escaping(_ ErrorMessage : String) -> Void) {
         
         do{

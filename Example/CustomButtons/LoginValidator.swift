@@ -8,8 +8,10 @@
 
 import Foundation
 
-struct LoginValidator {
+public struct LoginValidator {
     
+    /// Helps you to validate your login's inputs.
+    /// - Parameter model: The model you want to login with that.
     static func verify(model : LoginModel) throws{
         
 

@@ -45,10 +45,28 @@
             </objects>
             <point key="canvasLocation" x="1788" y="62"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main View Controller-->
+        <scene sceneID="CmN-0c-d6f">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="qDv-3C-Jkm" customClass="MainViewController" customModule="CustomButtons_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rbB-H0-Dtd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jxj-Yb-TlX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MKr-Sf-6oE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWg-ed-KQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="62"/>
+        </scene>
+        <!--Main Navigation Controller-->
         <scene sceneID="cSM-rC-DN3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r9h-Gf-Xgg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="r9h-Gf-Xgg" customClass="MainNavigationController" customModule="CustomButtons_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0RG-z2-WqJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
