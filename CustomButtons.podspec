@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CustomButtons'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'CustomButtons is a library that used to create symple and customized button with Icon and Subtitle just by one initilizer.'
 
 # This description is used to generate tags and improve search results.
