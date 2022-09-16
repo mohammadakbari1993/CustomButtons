@@ -145,14 +145,14 @@
 			path = CustomButtons_ExampleTests;
 			sourceTree = "<group>";
 		};
-		01FC8E8D28D3116C00DAC8D6 /* Model */ = {
+		01FC8E8D28D3116C00DAC8D6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				01FC8E8E28D3119100DAC8D6 /* User.swift */,
 				01FC8E9028D311A800DAC8D6 /* SavedUsers.swift */,
 				01FC8EB028D35AEF00DAC8D6 /* LoginModel.swift */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		01FC8E9228D3128E00DAC8D6 /* Help */ = {
@@ -271,10 +271,10 @@
 		607FACD21AFB9204008FA782 /* Example for CustomButtons */ = {
 			isa = PBXGroup;
 			children = (
-				01FC8EAB28D355C000DAC8D6 /* Extensions */,
-				01FC8EA528D3503400DAC8D6 /* Views */,
 				01FC8E9228D3128E00DAC8D6 /* Help */,
-				01FC8E8D28D3116C00DAC8D6 /* Model */,
+				01FC8EAB28D355C000DAC8D6 /* Extensions */,
+				01FC8E8D28D3116C00DAC8D6 /* Models */,
+				01FC8EA528D3503400DAC8D6 /* Views */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,

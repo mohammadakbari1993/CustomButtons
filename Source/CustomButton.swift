@@ -20,6 +20,8 @@ public class CustomButton: UIButton {
         super.init(coder: aDecoder)
     }
     
+    
+    /// Title of your button
     private var titleLbl : UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
@@ -28,6 +30,8 @@ public class CustomButton: UIButton {
         return label
     }()
     
+    
+    /// Subtitle of your button
     private var subtitleLbl : UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
@@ -36,20 +40,31 @@ public class CustomButton: UIButton {
         return label
     }()
     
+    
+    /// The icon of your button
     private var iconImage : UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
         return image
     }()
     
+    
+    /// The default type for your button.
     private var typeOfButton : ButtonTypes = .normal(title: "Button",tintColor: nil, textAlignment: nil)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
+    
+    /// Called when button tapped.
     private var buttonAction: (()->Void)?
     
+    
+    /// Your CustomButton initilizer, Called when you want to create a new button
+    /// - Parameters:
+    ///   - Type: Type of the button that you want to create, there are 3 type : [.normal, .withSubtitle, withIconAndSubtitle]
+    ///   - action: The button's action.
     public init(with Type : ButtonTypes , action : (()->Void)?) {
         super.init(frame: .zero)
         
@@ -109,19 +124,25 @@ public class CustomButton: UIButton {
     }
     
 
+    
+    /// Called when user tapped the button
     @objc private func handleTap(_ sender: UITapGestureRecognizer) {
         buttonAction?()
     }
     
     
+    /// Configure the button fo the normal type
+    /// - Parameter title: Title of button.
     private func configureButtonForNormal(title : String) {
-       
         self.titleLbl.text = title
         self.addSubview(titleLbl)
-    
-    
     }
     
+    
+    /// Configure the button fo the withSubtitle type
+    /// - Parameters:
+    ///   - title: Title of button.
+    ///   - subtitle: Subtitle of button.
     private func configureButtonForSubtitle(title : String, subtitle : String) {
         
         self.titleLbl.text = title
@@ -132,6 +153,12 @@ public class CustomButton: UIButton {
         
     }
     
+    
+    /// Configure the button fo the withIconAndSubtitle type
+    /// - Parameters:
+    ///   - icon: Icon of button.
+    ///   - title: Title of button.
+    ///   - subtitle: Subtitle of button.
     private func configureButtonForImageView(icon : String, title : String, subtitle : String) {
        
         self.titleLbl.text = title
